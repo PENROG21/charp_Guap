@@ -7,7 +7,11 @@ public class SeriesSum
         // Цикл для работы с пользователем.
         while (true)
         {
+<<<<<<< HEAD
             Console.Write("\nВведите номер задачи или 4 для выхода: ");
+=======
+            Console.Write("\nВведите номер задачи или 0 для выхода: ");
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
             try
             {
                 number = int.Parse(Console.ReadLine());
@@ -34,17 +38,21 @@ public class SeriesSum
                 default:
                     Console.WriteLine("Неверный формат введите ещё раз");
                     break;
+<<<<<<< HEAD
                 case 4:
                     task_4();
                     break;
                 case 5:
                     task_5();
                     break;
+=======
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
             }
         }
     }
     static void task_1()
     {
+<<<<<<< HEAD
         /*Выведите значения функции y= f ( x) и ее аргумента в виде таблицы значений
          * из диапазона x∈[a ;b ] с шагом h. Значения a, b и h запросите у пользователя. Вид
          * функции, соответствующий номеру индивидуального 
@@ -52,6 +60,8 @@ public class SeriesSum
          * таблице 1
          * Формула (2 + x * x)/Sin(x)   
         */
+=======
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
         float start, end, step;
         while (true)
         {
@@ -87,8 +97,12 @@ public class SeriesSum
         }
         Console.WriteLine("\nФормула (2 + x * x)/Sin(x)");
         Console.WriteLine("  X   |   Итог");
+<<<<<<< HEAD
         for (double x = start; (step > 0 && x < end) || 
             (step < 0 && x > end); x += step)
+=======
+        for (double x = start; (step > 0 && x < end) || (step < 0 && x > end); x += step)
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
         {
             try
             {
@@ -103,10 +117,13 @@ public class SeriesSum
     }
     static void task_2()
     {
+<<<<<<< HEAD
         /*
          * 9 Вычислить:
          * (1+sin 0 .1 ) (1+sin 0 .2 )… (1+sin 10 ) .
          */
+=======
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
         double cumulativeProduct = 1;
 
         // Цикл с шагом 0.1 от 0.1 до 10 (включая 10)
@@ -121,6 +138,7 @@ public class SeriesSum
     }
     static void task_3()
     {
+<<<<<<< HEAD
         /*
          * Найдите сумму ряда с точностью e (e<1, значение запросите у пользователя,
          * например, e=0,001), общий член которого an задан в соответствии с номером
@@ -129,6 +147,8 @@ public class SeriesSum
          * Таблица 2 – Варианты задания 3
          * a = n !n ;3 nn
          */
+=======
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
         double e; // Требуемая точность суммы ряда
         while (true)
         {
@@ -146,9 +166,13 @@ public class SeriesSum
             }
             catch (FormatException)
             {
+<<<<<<< HEAD
 
                 Console.WriteLine("Ошибка: " +
                     "Неверный формат ввода. Введите число.");
+=======
+                Console.WriteLine("Ошибка: Неверный формат ввода. Введите число.");
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
                 continue;
             }
             catch (ArgumentException ex)
@@ -189,6 +213,7 @@ public class SeriesSum
         while (i <= n) result *= i++;
         return result;
     }
+<<<<<<< HEAD
     static void task_5()
     {
         /*
@@ -266,4 +291,6 @@ public class SeriesSum
         Console.WriteLine($"Сумма элементов массива, кратных трем: {sum}");
         return sum;
     }
+=======
+>>>>>>> 9160edf840ca9b469ead4c853d260629a42f2d00
 }
